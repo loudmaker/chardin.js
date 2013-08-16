@@ -1,4 +1,4 @@
-# Chardin.js
+# Chardin.js (For APP Framework instead of JQuery)
 
 **Simple overlay instructions for your apps.**
 
@@ -46,27 +46,27 @@ Add the instructions to your elements:
 Once you have your elements ready you can show instructions running
 
 ```Javascript
-$('body').chardinJs('start')
+$.chardinJs('start', $('body'))
 ```
 
 If you would rather run ChardinJs confined to a particular container (instead of using the whole document) you can
 change `body` to some other selector.
 
 ```Javascript
-$('.container').chardinJs('start')
+$.chardinJs('start', $('.container'))
 ```
 
 ## Methods
 
-### .chardinJs('start')
+### .chardinJs('start', $('selector'))
 
 Start ChardinJs in the selector.
 
-### .chardinJs('toggle')
+### .chardinJs('toggle', $('selector'))
 
 Toggle ChardinJs.
 
-### .chardinJs('stop')
+### .chardinJs('stop', $('selector'))
 
 Make your best guess. That's right! Stops ChardinJs in the selector.
 
